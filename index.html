@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pilot Study Training Lab</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f7fb;
+    margin:0;
+    padding:0;
+}
+
+header{
+    background:#1e4e8c;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:25px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#1e4e8c;
+}
+
+.question{
+    margin:15px 0;
+}
+
+.option{
+    display:block;
+    margin:8px 0;
+    padding:10px;
+    background:#f5f5f5;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.option:hover{
+    background:#e8eefc;
+}
+
+.match-row{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:10px;
+    flex-wrap:wrap;
+}
+
+select{
+    padding:8px;
+}
+
+button{
+    background:#1e4e8c;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+button:hover{
+    background:#173b69;
+}
+
+.correct{
+    color:green;
+    font-weight:bold;
+}
+
+.incorrect{
+    color:red;
+    font-weight:bold;
+}
+
+#result{
+    display:none;
+    text-align:center;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:40px;
+}
+
+.score{
+    font-size:28px;
+    color:#1e4e8c;
+}
+
+.workflow{
+    margin-top:15px;
+    line-height:1.8;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Pilot Study Training Lab</h1>
+<p>Learn how to design, interpret, and improve pilot studies.</p>
+</header>
+
+<div class="container">
+
+<form id="quizForm">
+
+<!-- Scenario 1 -->
+
+<div class="card">
+
+<h2>Scenario 1: Educational Game</h2>
+
+<p><strong>Main Study:</strong> Evaluate the usability and playability of an educational game with 150 students.</p>
+
+<h3>Step 1: Design the Pilot Study</h3>
+
+<div class="question">
+<label class="option">
+<input type="radio" name="s1_design" value="correct">
+12 students play for 20 minutes and complete usability/playability questionnaires.
+</label>
+
+<label class="option">
+<input type="radio" name="s1_design">
+150 students participate.
+</label>
+
+<label class="option">
+<input type="radio" name="s1_design">
+One student interview only.
+</label>
+
+<label class="option">
+<input type="radio" name="s1_design">
+Students only read the game manual.
+</label>
+</div>
+
+<h3>Step 2: Match Findings to Improvements</h3>
+
+<div class="match-row">
+<span>A. Players cannot understand tutorial</span>
+<select id="s1a">
+<option value="">Select</option>
+<option value="1">Redesign navigation</option>
+<option value="2">Rewrite questionnaire items</option>
+<option value="3">Shorten gameplay tasks</option>
+<option value="4">Add tutorial guidance</option>
+</select>
+</div>
+
+<div class="match-row">
+<span>B. Session too long</span>
+<select id="s1b">
+<option value="">Select</option>
+<option value="1">Redesign navigation</option>
+<option value="2">Rewrite questionnaire items</option>
+<option value="3">Shorten gameplay tasks</option>
+<option value="4">Add tutorial guidance</option>
+</select>
+</div>
+
+<div class="match-row">
+<span>C. Navigation confusing</span>
+<select id="s1c">
+<option value="">Select</option>
+<option value="1">Redesign navigation</option>
+<option value="2">Rewrite questionnaire items</option>
+<option value="3">Shorten gameplay tasks</option>
+<option value="4">Add tutorial guidance</option>
+</select>
+</div>
+
+<div class="match-row">
+<span>D. Questionnaire items unclear</span>
+<select id="s1d">
+<option value="">Select</option>
+<option value="1">Redesign navigation</option>
+<option value="2">Rewrite questionnaire items</option>
+<option value="3">Shorten gameplay tasks</option>
+<option value="4">Add tutorial guidance</option>
+</select>
+</div>
+
+<h3>Step 3: Categorize Finding</h3>
+
+<p>“Questionnaire items are unclear.”</p>
+
+<label class="option">
+<input type="radio" name="s1_cat" value="correct"> Instrument Issue
+</label>
+
+<label class="option">
+<input type="radio" name="s1_cat"> Recruitment Issue
+</label>
+
+<label class="option">
+<input type="radio" name="s1_cat"> Technical Issue
+</label>
+
+</div>
+
+
+
+<!-- Scenario 2 -->
+
+<div class="card">
+
+<h2>Scenario 2: AI Learning Survey</h2>
+
+<p><strong>Main Study:</strong> Survey 300 students about AI-assisted learning.</p>
+
+<h3>Step 1: Design the Pilot Study</h3>
+
+<label class="option">
+<input type="radio" name="s2_design" value="correct">
+20 students complete the survey and provide feedback.
+</label>
+
+<label class="option">
+<input type="radio" name="s2_design">
+300 students complete the survey.
+</label>
+
+<label class="option">
+<input type="radio" name="s2_design">
+Researchers only check spelling.
+</label>
+
+<label class="option">
+<input type="radio" name="s2_design">
+One participant completes the survey.
+</label>
+
+<h3>Step 2: Match Findings to Improvements</h3>
+
+<div class="match-row">
+<span>A. Students skip Section 3</span>
+<select id="s2a">
+<option value="">Select</option>
+<option value="1">Add definitions</option>
+<option value="2">Shorten survey</option>
+<option value="3">Improve recruitment</option>
+<option value="4">Redesign section</option>
+</select>
+</div>
+
+<div class="match-row">
+<span>B. Survey too long</span>
+<select id="s2b">
+<option value="">Select</option>
+<option value="1">Add definitions</option>
+<option value="2">Shorten survey</option>
+<option value="3">Improve recruitment</option>
+<option value="4">Redesign section</option>
+</select>
+</div>
+
+<div class="match-row">
+<span>C. Generative AI misunderstood</span>
+<select id="s2c">
+<option value="">Select</option>
+<option value="1">Add definitions</option>
+<option value="2">Shorten survey</option>
+<option value="3">Improve recruitment</option>
+<option value="4">Redesign section</option>
+</select>
+</div>
+
+<div class="match-row">
+<span>D. Response rate low</span>
+<select id="s2d">
+<option value="">Select</option>
+<option value="1">Add definitions</option>
+<option value="2">Shorten survey</option>
+<option value="3">Improve recruitment</option>
+<option value="4">Redesign section</option>
+</select>
+</div>
+
+<h3>Step 3: Categorize Finding</h3>
+
+<p>“Only 40% of invited participants responded.”</p>
+
+<label class="option">
+<input type="radio" name="s2_cat" value="correct">
+Recruitment Issue
+</label>
+
+<label class="option">
+<input type="radio" name="s2_cat">
+Instrument Issue
+</label>
+
+<label class="option">
+<input type="radio" name="s2_cat">
+Technical Issue
+</label>
+
+</div>
+
+
+
+<!-- Scenario 3 -->
+
+<div class="card">
+
+<h2>Scenario 3: VR Training System</h2>
+
+<p><strong>Main Study:</strong> Evaluate usability of a VR training system.</p>
+
+<h3>Step 1: Design the Pilot Study</h3>
+
+<label class="option">
+<input type="radio" name="s3_design" value="correct">
+15 participants use the VR system and complete feedback questionnaires.
+</label>
+
+<label class="option">
+<input type="radio" name="s3_design">
+500 participants use the system.
+</label>
+
+<label class="option">
+<input type="radio" name="s3_design">
+Review VR documentation only.
+</label>
+
+<label class="option">
+<input type="radio" name="s3_design">
+Observe one participant silently.
+</label>
+
+<h3>Step 2: Match Findings to Improvements</h3>
+
+<div class="match-row">
+<span>A. Motion sickness</span>
+<select id="s3a">
+<option value="">Select</option>
+<option value="3">Reduce session length</option>
+<option value="1">Add orientation</option>
+<option value="2">Improve setup</option>
+<option value="4">Redesign task</option>
+</select>
+</div>
+
+<div class="match-row">
+<span>B. Need assistance before starting</span>
+<select id="s3b">
+<option value="">Select</option>
+<option value="3">Reduce session length</option>
+<option value="1">Add orientation</option>
+<option value="2">Improve setup</option>
+<option value="4">Redesign task</option>
+</select>
+</div>
+
+<div class="match-row">
+<span>C. Task completion rate very low</span>
+<select id="s3c">
+<option value="">Select</option>
+<option value="3">Reduce session length</option>
+<option value="1">Add orientation</option>
+<option value="2">Improve setup</option>
+<option value="4">Redesign task</option>
+</select>
+</div>
+
+<div class="match-row">
+<span>D. Technical delays</span>
+<select id="s3d">
+<option value="">Select</option>
+<option value="3">Reduce session length</option>
+<option value="1">Add orientation</option>
+<option value="2">Improve setup</option>
+<option value="4">Redesign task</option>
+</select>
+</div>
+
+<h3>Step 3: Categorize Finding</h3>
+
+<p>“The system frequently crashes during data collection.”</p>
+
+<label class="option">
+<input type="radio" name="s3_cat" value="correct">
+Technical Issue
+</label>
+
+<label class="option">
+<input type="radio" name="s3_cat">
+Instrument Issue
+</label>
+
+<label class="option">
+<input type="radio" name="s3_cat">
+Recruitment Issue
+</label>
+
+</div>
+
+<button type="button" onclick="calculateScore()">Submit</button>
+
+</form>
+
+<div id="result">
+
+<h2>Results</h2>
+
+<div class="score" id="scoreDisplay"></div>
+
+<div class="workflow">
+Research Goal<br>
+↓<br>
+Pilot Design<br>
+↓<br>
+Pilot Findings<br>
+↓<br>
+Implications<br>
+↓<br>
+Refined Main Study
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function calculateScore(){
+
+let score = 0;
+const total =18;
+
+document.querySelectorAll('input[value="correct"]:checked')
+.forEach(()=>score++);
+
+const matches = {
+s1a:"4",
+s1b:"3",
+s1c:"1",
+s1d:"2",
+s2a:"4",
+s2b:"2",
+s2c:"1",
+s2d:"3",
+s3a:"3",
+s3b:"1",
+s3c:"4",
+s3d:"2"
+};
+
+for(let id in matches){
+if(document.getElementById(id).value===matches[id]){
+score++;
+}
+}
+
+document.getElementById("result").style.display="block";
+document.getElementById("scoreDisplay").innerHTML =
+`You scored ${score} / ${total}`;
+
+window.scrollTo({
+top: document.body.scrollHeight,
+behavior: 'smooth'
+});
+
+}
+
+</script>
+
+</body>
+</html>
